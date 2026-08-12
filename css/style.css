@@ -1,0 +1,147 @@
+:root{--ink:#25302c;--forest:#23362f;--paper:#f4efe5;--cream:#fbf8f1;--persimmon:#b94c32;--gold:#b59250;--line:rgba(37,48,44,.18);--serif:"Noto Serif JP",Georgia,serif;--sans:"DM Sans",Arial,sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);line-height:1.6}a{color:inherit;text-decoration:none}img{max-width:100%}.skip-link{position:fixed;left:1rem;top:-5rem;background:#fff;padding:.7rem 1rem;z-index:100}.skip-link:focus{top:1rem}.site-header{height:84px;padding:0 clamp(1.25rem,4vw,4.5rem);display:flex;align-items:center;justify-content:space-between;position:absolute;width:100%;z-index:10;color:#fff;border-bottom:1px solid rgba(255,255,255,.22)}.site-header.scrolled{position:fixed;background:rgba(35,54,47,.96);backdrop-filter:blur(10px);height:68px}.brand{display:flex;align-items:center;gap:.7rem;font-family:var(--serif);letter-spacing:.03em}.brand-mark{display:grid;place-items:center;width:36px;height:36px;border:1px solid currentColor;border-radius:50%;font-size:.9rem}.brand strong{font-weight:600}.site-nav{display:flex;align-items:center;gap:clamp(1rem,2.4vw,2.5rem);font-size:.82rem;letter-spacing:.05em}.site-nav>a:not(.button):hover{opacity:.7}.menu-button{display:none;background:none;border:1px solid rgba(255,255,255,.6);color:#fff;padding:.55rem .8rem;font:inherit}.button{display:inline-flex;align-items:center;justify-content:center;background:var(--persimmon);color:#fff;padding:1rem 1.5rem;border:0;font-size:.82rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;transition:.2s}.button:hover{background:#9f3d28;transform:translateY(-2px)}.button-small{padding:.7rem 1rem}.hero{min-height:760px;height:100vh;max-height:980px;background:var(--forest);color:#fff;display:grid;grid-template-columns:53% 47%;position:relative;overflow:hidden}.hero-art{background:linear-gradient(145deg,rgba(27,51,43,.12),rgba(25,37,32,.44)),repeating-linear-gradient(45deg,#977a63 0,#977a63 2px,#a4876f 2px,#a4876f 5px);display:grid;place-items:center;color:rgba(255,255,255,.7);text-align:center;letter-spacing:.1em;text-transform:uppercase}.hero-art small{font-size:.65rem}.hero-copy{display:flex;flex-direction:column;justify-content:center;padding:8rem clamp(3rem,6vw,8rem) 4rem clamp(2rem,5vw,6rem);position:relative}.hero-copy:before{content:"";position:absolute;width:240px;height:240px;border:1px solid rgba(255,255,255,.12);border-radius:50%;right:-60px;top:20%}.eyebrow{text-transform:uppercase;letter-spacing:.19em;font-size:.68rem;font-weight:600;color:var(--persimmon);margin:0 0 1.4rem}.hero .eyebrow{color:#d8b378}.hero h1{font:500 clamp(3rem,5vw,5.8rem)/1.1 var(--serif);letter-spacing:-.04em;margin:0 0 2rem}.hero h1 em{font-style:normal;color:#d8b378}.hero-intro{font-size:clamp(1rem,1.3vw,1.2rem);max-width:540px;color:rgba(255,255,255,.75);margin:0 0 2.2rem}.button-row{display:flex;align-items:center;gap:2rem;flex-wrap:wrap}.text-link{font-size:.82rem;font-weight:600;letter-spacing:.05em;border-bottom:1px solid currentColor;padding-bottom:.25rem}.text-link span{margin-left:.5rem}.hero-note{font-size:.7rem;letter-spacing:.06em;color:rgba(255,255,255,.55);margin-top:2rem}.vertical-type{position:absolute;right:1.2rem;bottom:2.2rem;writing-mode:vertical-rl;letter-spacing:.3em;font-family:var(--serif);font-size:.7rem;color:rgba(255,255,255,.45)}.section{padding:clamp(5rem,10vw,9rem) clamp(1.25rem,8vw,9rem)}h2{font:500 clamp(2.3rem,4.3vw,4.6rem)/1.18 var(--serif);letter-spacing:-.035em;margin:0}h3{font:500 1.45rem/1.3 var(--serif)}.intro{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(3rem,8vw,9rem);background:var(--paper)}.prose{padding-top:2rem;font-size:1.05rem;color:#52605a}.prose p{margin:0 0 1.4rem}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:4rem;margin-bottom:4rem}.section-heading>p{max-width:430px;color:#66706c}.workshops{background:var(--cream)}.card-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}.workshop-card{border:1px solid var(--line);background:#fff}.card-image{height:300px;background:repeating-linear-gradient(135deg,#c2a682 0,#c2a682 3px,#b69b77 3px,#b69b77 7px);display:grid;place-items:center;color:rgba(255,255,255,.9);text-transform:uppercase;letter-spacing:.15em;font-size:.7rem;position:relative}.image-two{background:repeating-linear-gradient(45deg,#59685f 0,#59685f 3px,#526158 3px,#526158 7px)}.card-image b{position:absolute;top:1rem;right:1rem;background:var(--persimmon);padding:.45rem .7rem;font-weight:500}.card-body{padding:2rem}.card-number{color:var(--persimmon);font-size:.7rem}.card-body h3{margin:.5rem 0 1rem}.card-body>p:not(.card-number){color:#65706b}.card-body ul{list-style:none;padding:0;margin:1.5rem 0 2rem;border-top:1px solid var(--line)}.card-body li{padding:.65rem 0;border-bottom:1px solid var(--line);font-size:.85rem}.content-note{text-align:center;font-size:.72rem;color:#7f8783;margin:2rem 0 0}.values{background:var(--forest);color:#fff;display:grid;grid-template-columns:repeat(3,1fr);gap:0;padding-top:5rem;padding-bottom:5rem}.values>div{padding:0 clamp(1.5rem,4vw,4rem);border-right:1px solid rgba(255,255,255,.18)}.values>div:last-child{border:0}.values span{font-family:var(--serif);color:#d8b378}.values h3{margin:1rem 0 .6rem}.values p{color:rgba(255,255,255,.62);font-size:.88rem}.gallery{background:var(--paper)}.gallery-grid{display:grid;grid-template-columns:1.15fr .85fr 1fr;grid-template-rows:220px 220px;gap:1rem}.gallery-item{display:grid;place-items:center;background:#b59672;color:rgba(255,255,255,.75);text-transform:uppercase;letter-spacing:.12em;font-size:.65rem}.gallery-item.tall{grid-row:span 2;background:#6f5145}.gallery-item.dark{background:#384b42}.gallery-item.light{background:#cbbda4;color:#fff}.gallery-item.wide{grid-column:span 1;background:#8c7568}.quote-band{padding:6rem 2rem;text-align:center;background:var(--persimmon);color:#fff}.quote-band p{font:400 clamp(1.8rem,3vw,3.3rem)/1.5 var(--serif);margin:0 0 1rem}.quote-band span{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;opacity:.7}.faq{display:grid;grid-template-columns:.75fr 1.25fr;gap:clamp(3rem,8vw,9rem)}.faq-intro{color:#68716d;max-width:380px;margin:2rem 0}.accordion details{border-top:1px solid var(--line)}.accordion details:last-child{border-bottom:1px solid var(--line)}summary{list-style:none;cursor:pointer;padding:1.5rem 2.4rem 1.5rem 0;font-family:var(--serif);font-size:1.05rem;position:relative}summary::-webkit-details-marker{display:none}summary span:before,summary span:after{content:"";position:absolute;right:.3rem;top:50%;width:14px;height:1px;background:var(--ink)}summary span:after{transform:rotate(90deg)}details[open] summary span:after{transform:rotate(0)}details p{margin:0;padding:0 3rem 1.6rem 0;color:#68716d;font-size:.9rem}.visit{display:grid;grid-template-columns:1.2fr .8fr;padding-top:0;gap:0}.map-placeholder{min-height:500px;background-color:#cfc9b9;background-image:linear-gradient(30deg,rgba(255,255,255,.3) 12%,transparent 12.5%,transparent 87%,rgba(255,255,255,.3) 87.5%),linear-gradient(150deg,rgba(255,255,255,.3) 12%,transparent 12.5%,transparent 87%,rgba(255,255,255,.3) 87.5%);background-size:80px 140px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#5f655f}.map-placeholder span{text-transform:uppercase;letter-spacing:.15em}.map-placeholder small{max-width:260px;margin-top:.6rem}.visit-copy{background:var(--paper);padding:clamp(3rem,6vw,6rem)}.visit-copy h2{font-size:clamp(2.1rem,3.3vw,3.8rem)}.visit-copy>p:not(.eyebrow){color:#68716d}.visit-copy dl{margin:2rem 0}.visit-copy dl div{display:grid;grid-template-columns:1fr 1.4fr;padding:.7rem 0;border-top:1px solid var(--line);font-size:.82rem}.visit-copy dt{font-weight:600}.visit-copy dd{margin:0;color:#68716d}.booking{background:var(--forest);color:#fff;padding:clamp(5rem,9vw,9rem) clamp(1.25rem,8vw,9rem);display:grid;grid-template-columns:1.25fr .75fr;gap:5rem;align-items:center}.booking .eyebrow{color:#d8b378}.booking h2{font-size:clamp(2.8rem,5vw,5.5rem)}.booking>div:last-child p{color:rgba(255,255,255,.7);font-size:1.1rem}.button-light{background:#fff;color:var(--forest);margin:1rem 0}.button-light:hover{background:var(--paper)}.booking small{display:block;color:rgba(255,255,255,.45)}footer{background:#17251f;color:#fff;padding:4rem clamp(1.25rem,8vw,9rem) 2rem;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:3rem;position:relative}.brand-footer{align-self:start}.footer-links{display:grid;gap:.5rem;font-size:.85rem}.footer-links a:hover{color:#d8b378}.copyright{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);padding-top:1.5rem;font-size:.68rem;color:rgba(255,255,255,.45)}footer p{color:rgba(255,255,255,.6);font-size:.85rem;margin:0}
+@media(max-width:850px){.site-header{height:70px}.menu-button{display:block}.site-nav{display:none;position:absolute;top:70px;left:0;right:0;background:var(--forest);padding:1.5rem;flex-direction:column;align-items:stretch}.site-nav.open{display:flex}.hero{height:auto;max-height:none;min-height:0;grid-template-columns:1fr;padding-top:70px}.hero-art{height:48vh;min-height:360px;grid-row:1}.hero-copy{padding:4rem 1.5rem 5rem}.vertical-type{display:none}.intro,.faq,.visit,.booking{grid-template-columns:1fr}.section-heading{display:block}.section-heading>p{margin-top:1.5rem}.card-grid{grid-template-columns:1fr}.values{grid-template-columns:1fr}.values>div{border-right:0;border-bottom:1px solid rgba(255,255,255,.18);padding:2rem 0}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:220px 180px 180px}.gallery-item.tall{grid-row:span 2}.gallery-item.wide{grid-column:span 2}.visit-copy{grid-row:1}.map-placeholder{min-height:380px}.booking{gap:2rem}footer{grid-template-columns:1fr 1fr}.brand-footer,.copyright{grid-column:1/-1}}
+@media(max-width:520px){h2{font-size:2.25rem}.hero h1{font-size:3rem}.section{padding:4.5rem 1.25rem}.hero-art{min-height:300px}.card-image{height:230px}.gallery-grid{display:grid;grid-template-columns:1fr;grid-template-rows:repeat(5,230px)}.gallery-item.tall,.gallery-item.wide{grid-row:auto;grid-column:auto}.quote-band{padding:4rem 1.2rem}.visit{padding:0}.booking{padding:4.5rem 1.25rem}.booking h2{font-size:2.7rem}footer{grid-template-columns:1fr}.copyright{grid-column:1}.button-row{align-items:flex-start;flex-direction:column}.button{width:100%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* Cobalt Garden brand system — inspired by the studio's bright kimono collection. */
+:root{--ink:#17233d;--forest:#1455c5;--paper:#fff3d9;--cream:#fff8ea;--persimmon:#f4511e;--green:#18a45b;--gold:#c79a32;--purple:#70259b;--line:rgba(23,35,61,.18)}
+.site-header.scrolled{background:rgba(20,85,197,.96)}
+.brand-mark{background:rgba(255,255,255,.1)}
+.button{box-shadow:0 8px 24px rgba(78,34,17,.18)}
+.button:hover{background:#d93f12}
+.hero-art{background-image:linear-gradient(145deg,rgba(20,85,197,.03),rgba(23,35,61,.2)),url("../images/kimono-hero.jpg");background-size:cover;background-position:center 48%}
+.hero-copy{background:linear-gradient(145deg,#1455c5,#173f9c)}
+.hero-copy:before{width:420px;height:420px;border:0;border-radius:0;background:url("../images/kimono-seasonal-art.jpg") center/contain no-repeat;opacity:.07;right:-120px;top:12%;transform:none}
+.hero .eyebrow{color:#ffd75a}.hero h1 em{color:#ffb32c}.hero-intro{color:rgba(255,255,255,.84)}.hero-note{color:rgba(255,255,255,.68)}
+.motif-section{position:relative;overflow:hidden}.motif-section:after{content:"";position:absolute;width:min(52vw,720px);aspect-ratio:1.4;right:-12%;bottom:-12%;background:url("../images/kimono-seasonal-art.jpg") center/contain no-repeat;opacity:.065;pointer-events:none}
+.intro>div,.intro>.prose{position:relative;z-index:1}
+.workshop-card{border-color:rgba(20,85,197,.18);box-shadow:0 12px 40px rgba(23,35,61,.07)}
+.card-image{background-size:cover;background-position:center;color:transparent}
+.image-one{background-image:linear-gradient(rgba(23,35,61,.05),rgba(23,35,61,.12)),url("../images/kimono-hands.jpg")}
+.image-two{background-image:linear-gradient(rgba(23,35,61,.03),rgba(23,35,61,.1)),url("../images/kimono-orange.jpg");background-position:center 58%}
+.card-image b{color:#fff}
+.values{background:var(--green)}.values span{color:#ffe08a}
+.gallery{background:linear-gradient(135deg,#fff3d9,#fff8ea)}
+.gallery-item{overflow:hidden;margin:0;background:var(--forest)}.gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}.gallery-item:hover img{transform:scale(1.035)}
+.quote-band{background:linear-gradient(120deg,#f4511e,#ff6a29);position:relative;overflow:hidden}.quote-band:after{content:"";position:absolute;inset:-40% -8% auto auto;width:520px;height:520px;background:url("../images/kimono-seasonal-art.jpg") center/contain no-repeat;opacity:.07}
+.visit-copy{background:#eef8ef}.booking{background:linear-gradient(135deg,#1455c5 0%,#1455c5 66%,#18a45b 66%,#18a45b 100%);position:relative;overflow:hidden}.booking:after{content:"";position:absolute;width:520px;height:380px;right:-120px;bottom:-80px;background:url("../images/kimono-seasonal-art.jpg") center/contain no-repeat;opacity:.07}.booking>div{position:relative;z-index:1}
+.button-light{color:#1455c5}.button-light:hover{background:#fff3d9}footer{background:#17233d}
+@media(max-width:850px){.site-nav{background:#1455c5}.hero-copy:before{width:260px;height:260px;right:-100px}.booking{background:linear-gradient(160deg,#1455c5 0%,#1455c5 78%,#18a45b 78%,#18a45b 100%)}}
+
+/* Quiet Kimono palette — indigo, sumi, sage, wisteria, beni and kinari. */
+:root{--ink:#1c2523;--forest:#24364b;--paper:#ece5db;--cream:#f6f1e8;--persimmon:#a64045;--green:#738b7a;--gold:#a68a58;--purple:#9887a6;--line:rgba(28,37,35,.18)}
+.site-header.scrolled{background:rgba(36,54,75,.97)}
+.button{background:#a64045;box-shadow:0 8px 24px rgba(28,37,35,.16)}.button:hover{background:#8d3338}
+.hero-art{background-image:linear-gradient(rgba(36,54,75,.03),rgba(38,56,50,.08)),url("../images/workshop-hero.jpg");background-blend-mode:multiply,normal;background-position:center 58%}
+.hero-copy{background:linear-gradient(145deg,#24364b,#263832)}
+.hero .eyebrow{color:#d6c59b}.hero h1 em{color:#c6b0cf}.hero-intro{color:rgba(246,241,232,.82)}
+.workshop-card{border-color:rgba(36,54,75,.16);box-shadow:0 12px 38px rgba(28,37,35,.06)}
+.image-one{background-image:linear-gradient(rgba(36,54,75,.16),rgba(38,56,50,.18)),url("../images/kimono-hands-muted.jpg");background-blend-mode:multiply,normal}
+.image-two{background-image:linear-gradient(rgba(36,54,75,.14),rgba(38,56,50,.18)),url("../images/kimono-orange-muted.jpg");background-blend-mode:multiply,normal}
+.values{background:#263832}.values span{color:#d6c59b}
+.gallery{background:linear-gradient(135deg,#ece5db,#f6f1e8)}.gallery-item img{filter:none}
+.quote-band{background:linear-gradient(120deg,#a64045,#7f343b)}
+.visit-copy{background:#e5ebe5}
+.booking{background:linear-gradient(135deg,#24364b 0%,#24364b 68%,#738b7a 68%,#738b7a 100%)}
+.button-light{color:#24364b}.button-light:hover{background:#ece5db}
+footer{background:#1c2523}
+@media(max-width:850px){.site-nav{background:#24364b}.booking{background:linear-gradient(160deg,#24364b 0%,#24364b 80%,#738b7a 80%,#738b7a 100%)}}
+
+.brand-logo{width:52px;height:52px;display:block;object-fit:contain;filter:drop-shadow(0 3px 8px rgba(0,0,0,.16))}.brand-logo-footer{width:64px;height:64px}.site-header .brand{gap:.8rem}.site-header .brand-logo{width:50px;height:50px}@media(max-width:850px){.site-header .brand-logo{width:42px;height:42px}.site-header .brand{font-size:.92rem}}
+.access-map{margin:0;min-height:500px;background:#fff;overflow:hidden;display:grid;align-items:center}.access-map a{display:grid;position:relative;width:100%;height:100%;align-items:center}.access-map img{display:block;width:100%;height:auto;max-height:620px;object-fit:contain;object-position:center}.access-map span{position:absolute;left:50%;bottom:1rem;transform:translateX(-50%);background:rgba(36,54,75,.92);color:#fff;padding:.55rem .9rem;font-size:.72rem;letter-spacing:.04em;white-space:nowrap}.visit-copy dl .address-row{grid-template-columns:1fr;padding:1.2rem 0}.address-row dt{font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--persimmon)}.address-row dd{font-size:clamp(1.05rem,1.5vw,1.35rem);line-height:1.45;margin-top:.45rem}.address-row a{display:block}.address-row a:hover{color:var(--persimmon)}.visit-actions{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}.map-button{background:var(--forest)}.map-button:hover{background:#1c2c3e}@media(max-width:850px){.access-map{min-height:0}.access-map img{min-height:0;max-height:none}.access-map span{font-size:.65rem}.motif-section:after{width:95vw;right:-35%}}
+
+/* Current website baseline: readable header, true watermark treatment, and a wide map-led visit section. */
+.site-header{background:rgba(36,54,75,.94);text-shadow:0 1px 2px rgba(0,0,0,.28)}
+.hero-copy:before,.motif-section:after,.quote-band:after,.booking:after{mix-blend-mode:multiply;opacity:.055;background-color:transparent}
+.hero-copy:before{opacity:.075}
+.experience-details{background:var(--cream);display:grid;grid-template-columns:.8fr 1.2fr;column-gap:clamp(3rem,7vw,8rem);row-gap:clamp(2rem,3vw,3.5rem);align-items:start;padding-bottom:clamp(3rem,5vw,5rem)}
+.experience-details+.workshops{padding-top:clamp(3rem,5vw,5rem)}
+.experience-lead>p:last-child{color:#68716d;font-size:1.08rem;max-width:560px;margin-top:2rem}
+.experience-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.experience-steps article{border-top:3px solid var(--persimmon);padding:1.4rem 1.1rem 1.2rem;background:rgba(255,255,255,.6)}
+.experience-steps span{font:600 .76rem var(--sans);letter-spacing:.14em;color:var(--persimmon)}
+.experience-steps h3{margin:.75rem 0}.experience-steps p{font-size:.9rem;color:#68716d;margin:0}
+.experience-facts{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);list-style:none;margin:0;padding:0;border:1px solid var(--line);background:#ccd9cf}
+.experience-facts li{padding:1.25rem;text-align:center;font-size:.82rem;font-weight:600;color:var(--forest);border-right:1px solid var(--line)}
+.experience-facts li:last-child{border-right:0}
+.visit{display:block;padding:clamp(4rem,8vw,8rem) clamp(1.25rem,8vw,9rem);background:var(--paper)}
+.access-map{min-height:0;max-width:1220px;margin:0 auto;background:transparent;border:1px solid var(--line);box-shadow:0 18px 55px rgba(28,37,35,.1)}
+.access-map a{height:auto}.access-map img{max-height:none;width:100%;height:auto;object-fit:initial}
+.visit-copy{max-width:1220px;margin:0 auto;padding:clamp(2.5rem,5vw,4.5rem);display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(3rem,7vw,7rem);align-items:start}
+.visit-copy>div>p:not(.eyebrow){color:#68716d}.visit-copy dl{margin:0 0 2rem}
+.visit-copy dl div:not(.address-row){grid-template-columns:.8fr 1.2fr;font-size:.9rem}
+@media(max-width:900px){.experience-details,.visit-copy{grid-template-columns:1fr}.experience-steps{grid-template-columns:1fr}.experience-facts{grid-template-columns:1fr 1fr}.experience-facts li{border-bottom:1px solid var(--line)}.visit{padding-left:1rem;padding-right:1rem}.access-map span{white-space:normal;text-align:center;width:max-content;max-width:90%}}
+@media(max-width:520px){.experience-facts{grid-template-columns:1fr}.experience-facts li{border-right:0}.site-header{background:rgba(36,54,75,.98)}}
+
+.details-section{background:var(--paper)}
+.detail-summary{display:grid;grid-template-columns:repeat(4,1fr);background:var(--forest);color:#fff;margin-bottom:clamp(4rem,7vw,7rem)}
+.detail-summary>div{padding:1.6rem;border-right:1px solid rgba(255,255,255,.18)}.detail-summary>div:last-child{border:0}
+.detail-summary small{display:block;text-transform:uppercase;letter-spacing:.14em;color:#d6c59b;font-size:.68rem;margin-bottom:.45rem}.detail-summary strong{font:500 1.15rem var(--serif)}
+.itinerary-block{display:grid;grid-template-columns:.45fr 1.55fr;gap:clamp(2rem,6vw,6rem);margin-bottom:clamp(4rem,7vw,7rem)}
+.itinerary-list{list-style:none;counter-reset:steps;display:grid;grid-template-columns:1fr 1fr;padding:0;margin:0;border-top:1px solid var(--line)}
+.itinerary-list li{counter-increment:steps;padding:1.6rem 1.4rem 1.6rem 3.5rem;border-bottom:1px solid var(--line);position:relative}.itinerary-list li:nth-child(odd){border-right:1px solid var(--line)}
+.itinerary-list li:before{content:counter(steps,decimal-leading-zero);position:absolute;left:.5rem;top:1.8rem;color:var(--persimmon);font-size:.72rem;font-weight:600;letter-spacing:.08em}
+.itinerary-list h3{margin:0 0 .55rem;font-size:1.15rem}.itinerary-list p{margin:0;color:#68716d;font-size:.88rem}
+.included-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:clamp(4rem,7vw,7rem)}
+.included-grid article{background:var(--cream);padding:clamp(2rem,4vw,3.5rem);border:1px solid var(--line)}
+.check-list,.plain-list{list-style:none;padding:0;margin:0}.check-list li,.plain-list li{position:relative;padding:.65rem 0 .65rem 1.8rem;border-bottom:1px solid var(--line)}.check-list li:last-child,.plain-list li:last-child{border:0}
+.check-list li:before{content:"✓";position:absolute;left:0;color:var(--persimmon);font-weight:700}.plain-list li:before{content:"—";position:absolute;left:0;color:var(--gold)}
+.important-info{display:grid;grid-template-columns:.65fr 1.35fr;gap:clamp(2rem,6vw,6rem);background:#ccd9cf;padding:clamp(2rem,5vw,4.5rem)}
+.important-info ul{margin:0;padding-left:1.25rem}.important-info li{padding:.35rem 0;color:#4e5d57}
+.arrival-note{margin-top:1.5rem;padding-left:1rem;border-left:3px solid var(--persimmon)}
+.booking-price{font:500 clamp(2rem,3vw,3.2rem)/1.1 var(--serif)!important;color:#fff!important;margin:0 0 1rem!important}.booking-price small{display:inline!important;font:500 .38em var(--sans);color:rgba(255,255,255,.68)!important}
+@media(max-width:900px){.detail-summary{grid-template-columns:1fr 1fr}.itinerary-block,.important-info{grid-template-columns:1fr}.included-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.detail-summary,.itinerary-list{grid-template-columns:1fr}.detail-summary>div{border-right:0;border-bottom:1px solid rgba(255,255,255,.18)}.itinerary-list li:nth-child(odd){border-right:0}}
+
+/* Distinct decorative crops from the two supplied Japanese art files. */
+.hero-copy:before{width:520px;height:430px;right:-115px;top:13%;background-image:url("../images/kimono-crane-floral-art.jpg");background-repeat:no-repeat;background-size:1050px auto;background-position:left top;mix-blend-mode:multiply;filter:saturate(1.35) contrast(1.12);opacity:.24}
+.motif-section:after{width:min(56vw,820px);aspect-ratio:1.25;right:-8%;bottom:-14%;background-image:url("../images/kimono-seasonal-art.jpg");background-repeat:no-repeat;background-size:980px auto;background-position:right bottom;mix-blend-mode:multiply;filter:saturate(1.18) contrast(1.08);opacity:.27}
+.motif-section .prose{background:rgba(246,241,232,.94);padding:clamp(1.5rem,3vw,2.5rem);box-shadow:0 12px 36px rgba(28,37,35,.07)}
+.details-section{position:relative;overflow:hidden}.details-section:before{content:"";position:absolute;width:650px;height:360px;right:-120px;top:90px;background:url("../images/kimono-crane-floral-art.jpg") left top/1120px auto no-repeat;mix-blend-mode:multiply;filter:saturate(1.25) contrast(1.08);opacity:.22;pointer-events:none}.details-section>*{position:relative;z-index:1}
+.quote-band:after{inset:auto -45px -150px auto;width:600px;height:520px;background-image:url("../images/kimono-crane-floral-art.jpg");background-repeat:no-repeat;background-size:1100px auto;background-position:left bottom;mix-blend-mode:multiply;filter:saturate(1.3) contrast(1.1);opacity:.3}
+.booking:after{width:620px;height:500px;right:-120px;bottom:-90px;background-image:url("../images/kimono-seasonal-art.jpg");background-repeat:no-repeat;background-size:900px auto;background-position:right bottom;mix-blend-mode:multiply;filter:saturate(1.2) contrast(1.08);opacity:.23}
+@media(max-width:850px){.hero-copy:before{width:330px;height:300px;right:-100px;top:18%;background-size:760px auto;opacity:.2}.motif-section:after{width:100vw;right:-38%;opacity:.2}.details-section:before{width:430px;height:260px;right:-180px;opacity:.17}.quote-band:after{width:420px;height:380px;right:-120px;opacity:.22}.booking:after{width:440px;height:360px;right:-160px;opacity:.18}}
+
+/* Documentary gallery: preserve each photograph's full composition. */
+.gallery-grid{display:block;columns:3 300px;column-gap:1rem}
+.gallery-item,.gallery-item.tall,.gallery-item.wide{display:block;break-inside:avoid;grid-row:auto;grid-column:auto;margin:0 0 1rem;background:#ddd4c6}
+.gallery-item img{display:block;width:100%;height:auto;object-fit:contain;transform:none!important}
+@media(max-width:720px){.gallery-grid{columns:2 240px}}
+@media(max-width:520px){.gallery-grid{display:block;columns:1}.gallery-item{margin-bottom:.8rem}}
+
+/* English-first bilingual signposts, aligned with the approved hotel poster. */
+.eyebrow-jp{display:block;margin-top:.35rem;font-family:var(--serif);font-size:.72em;font-weight:500;letter-spacing:.08em;text-transform:none}
+.jp-text{display:block;margin-top:.45rem;font-family:var(--serif);font-size:.82em;line-height:1.55;letter-spacing:.03em}
+.hero-note .jp-text{color:rgba(255,255,255,.72)}
+.experience-facts small{display:block;margin-top:.45rem;font-family:var(--serif);font-size:.82em;font-weight:500;line-height:1.45;color:rgba(36,54,75,.78)}
+.location-callout{max-width:1220px;margin:0 auto clamp(1.5rem,3vw,2.5rem);text-align:center;color:var(--forest)}
+.location-callout strong{display:block;font:600 clamp(1.65rem,3.3vw,3.25rem)/1.12 var(--sans);letter-spacing:-.025em;text-transform:uppercase}
+.location-callout span{display:block;margin-top:.65rem;font:500 clamp(.9rem,1.25vw,1.1rem)/1.5 var(--serif);letter-spacing:.06em}
+.booking-jp{margin:.35rem 0 .75rem;color:rgba(255,255,255,.72)!important;font-family:var(--serif)}
+.visit-copy dt{line-height:1.45}.visit-copy dd{line-height:1.55}
+@media(max-width:520px){.location-callout strong{font-size:1.55rem}.experience-facts small{font-size:.88em}}
+
+/* Workshop-card photographs approved for launch, August 12. */
+.image-one{background-image:linear-gradient(rgba(36,54,75,.06),rgba(38,56,50,.08)),url("../images/workshop-card-keepsakes.jpg");background-position:center 48%;background-blend-mode:multiply,normal}
+.image-two{background-image:linear-gradient(rgba(36,54,75,.08),rgba(38,56,50,.1)),url("../images/workshop-card-group-making.jpg");background-position:center center;background-blend-mode:multiply,normal}
+
+/* Compact, email-first workshop availability. */
+.schedule{background:var(--cream)}
+.schedule-heading{align-items:end}
+.schedule-list{display:grid;grid-template-columns:1fr;gap:1.25rem;max-width:980px;margin:0 auto}
+.schedule-day{display:grid;grid-template-columns:132px 1fr;background:#fff;border:1px solid var(--line);box-shadow:0 12px 32px rgba(28,37,35,.055)}
+.schedule-date{display:grid;place-items:center;background:var(--forest);color:#fff;text-align:center;padding:1.25rem .8rem}
+.schedule-date time{display:grid;line-height:1}
+.schedule-date span{font-size:.7rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:#d6c59b}
+.schedule-date strong{font:500 3rem/1.05 var(--serif);margin:.25rem 0}
+.schedule-date small{font-size:.72rem;color:rgba(255,255,255,.68)}
+.schedule-day ul{list-style:none;margin:0;padding:.6rem 1.2rem}
+.schedule-day li{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.72rem 0;border-bottom:1px solid var(--line)}
+.schedule-day li:last-child{border-bottom:0}
+.schedule-day li time{font:500 1rem var(--sans);white-space:nowrap}
+.schedule-day li strong{display:inline-block;background:var(--persimmon);color:#fff;padding:.35rem .55rem;font-size:.7rem;line-height:1.15;letter-spacing:.035em;text-transform:uppercase;text-align:center;white-space:nowrap}
+.schedule-action{display:flex;align-items:center;gap:1.5rem;margin-top:2rem;flex-wrap:wrap}
+.schedule-action p{margin:0;color:#68716d;font-size:.85rem}
+.booking-schedule-link{color:#fff;font-weight:600;border-bottom:2px solid #d6c59b;padding-bottom:.08em}
+.booking-schedule-link:hover{color:#d6c59b}
+@media(max-width:560px){.schedule-day{grid-template-columns:94px 1fr}.schedule-date{padding:1rem .45rem}.schedule-date strong{font-size:2.25rem}.schedule-day ul{padding:.45rem .75rem}.schedule-day li{align-items:flex-start;flex-direction:column;gap:.4rem}.schedule-day li strong{white-space:normal;text-align:left}.schedule-action .button{width:100%}}
