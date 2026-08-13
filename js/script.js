@@ -37,10 +37,9 @@ const formatWorkshopTime = (date, time) => new Intl.DateTimeFormat('en', {
   hour12: true,
 }).format(new Date(`${date}T${time}:00`));
 
-const renderSchedule = () => {
+const renderSchedule = (schedule) => {
   if (!scheduleList) return;
 
-  const schedule = window.WORKSHOP_SCHEDULE ?? [];
   scheduleList.replaceChildren(...schedule.map(({ date, slots }) => {
     const formattedDate = formatWorkshopDate(date);
     const article = document.createElement('article');
@@ -70,4 +69,17 @@ const renderSchedule = () => {
   }));
 };
 
-renderSchedule();
+const loadSchedule = async () => {
+  if (!scheduleList) return;
+
+  try {
+    const response = await fetch('schedule.json', { cache: 'no-cache' });
+    if (!response.ok) throw new Error(`Schedule request failed: ${response.status}`);
+    renderSchedule(await response.json());
+  } catch (error) {
+    console.error(error);
+    scheduleList.textContent = 'The schedule is temporarily unavailable. Please email the studio for current availability.';
+  }
+};
+
+loadSchedule();
