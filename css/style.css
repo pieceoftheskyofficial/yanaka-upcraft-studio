@@ -145,3 +145,10 @@ footer{background:#1c2523}
 .booking-schedule-link{color:#fff;font-weight:600;border-bottom:2px solid #d6c59b;padding-bottom:.08em}
 .booking-schedule-link:hover{color:#d6c59b}
 @media(max-width:560px){.schedule-day{grid-template-columns:94px 1fr}.schedule-date{padding:1rem .45rem}.schedule-date strong{font-size:2.25rem}.schedule-day ul{padding:.45rem .75rem}.schedule-day li{align-items:flex-start;flex-direction:column;gap:.4rem}.schedule-day li strong{white-space:normal;text-align:left}.schedule-action .button{width:100%}}
+
+/* Visible contact details for visitors who prefer copying an email address. */
+.email-address{overflow-wrap:anywhere;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em}
+.schedule-action p{max-width:520px}
+.booking-email{margin:.25rem 0 0!important;font-size:.95rem!important}
+.booking-email a{color:#fff;font-weight:600;text-decoration:underline;text-underline-offset:.25em;overflow-wrap:anywhere}
+.footer-links .email-address{color:#fff}
