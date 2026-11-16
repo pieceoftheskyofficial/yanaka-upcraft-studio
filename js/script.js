@@ -40,7 +40,20 @@ const formatWorkshopTime = (date, time) => new Intl.DateTimeFormat('en', {
 const renderSchedule = (schedule) => {
   if (!scheduleList) return;
 
-  scheduleList.replaceChildren(...schedule.map(({ date, slots }) => {
+  const today = new Date();
+  const localDate = [
+    today.getFullYear(),
+    String(today.getMonth() + 1).padStart(2, '0'),
+    String(today.getDate()).padStart(2, '0'),
+  ].join('-');
+  const upcomingSchedule = schedule.filter(({ date }) => date >= localDate);
+
+  if (upcomingSchedule.length === 0) {
+    scheduleList.textContent = 'New workshop dates are coming soon. Please email the studio for current availability.';
+    return;
+  }
+
+  scheduleList.replaceChildren(...upcomingSchedule.map(({ date, slots }) => {
     const formattedDate = formatWorkshopDate(date);
     const article = document.createElement('article');
     article.className = 'schedule-day';
