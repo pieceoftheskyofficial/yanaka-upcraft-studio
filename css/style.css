@@ -152,3 +152,6 @@ footer{background:#1c2523}
 .booking-email{margin:.25rem 0 0!important;font-size:.95rem!important}
 .booking-email a{color:#fff;font-weight:600;text-decoration:underline;text-underline-offset:.25em;overflow-wrap:anywhere}
 .footer-links .email-address{color:#fff}
+
+/* Keep anchored sections visible below the fixed navigation bar. */
+#schedule{scroll-margin-top:84px}
